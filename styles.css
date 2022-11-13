@@ -1,0 +1,129 @@
+.main_container {
+  width: 100%;
+  font-family: raleway, sans-serif;
+}
+.main_container .main_header {
+  font-size: 2.5rem;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.main_container .nav_links {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.main_container .nav_links li {
+  cursor: pointer;
+}
+.main_container .banner {
+  position: relative;
+}
+.main_container .banner .banner_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 5.625rem;
+  overflow-wrap: break-word;
+  width: 48.75rem;
+  text-align: center;
+  color: white;
+}
+.main_container .banner img {
+  width: 100%;
+  height: 50rem;
+}
+.main_container .sub_head {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.main_container .body_content {
+  font-family: "Avenir Light";
+}
+.main_container ul {
+  text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem auto;
+  max-width: 26rem;
+}
+.main_container .applications, .main_container .sensors {
+  background-color: rgb(225, 239, 242);
+  padding: 3rem;
+}
+.main_container .applications .row_1,
+.main_container .applications .row_2, .main_container .sensors .row_1,
+.main_container .sensors .row_2 {
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.main_container .applications .row_1 .app,
+.main_container .applications .row_2 .app, .main_container .sensors .row_1 .app,
+.main_container .sensors .row_2 .app {
+  text-align: center;
+}
+.main_container .applications .row_1 .app img,
+.main_container .applications .row_2 .app img, .main_container .sensors .row_1 .app img,
+.main_container .sensors .row_2 .app img {
+  height: 8.875rem;
+  width: 8.875rem;
+}
+.main_container .applications .row_1 .app .label,
+.main_container .applications .row_2 .app .label, .main_container .sensors .row_1 .app .label,
+.main_container .sensors .row_2 .app .label {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.375rem;
+  min-width: 15rem;
+}
+.main_container .capabilities {
+  display: flex;
+  width: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+.main_container .capabilities .domain {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+.main_container .capabilities .technical {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+.main_container .experience {
+  background-color: rgb(241, 241, 241);
+  padding: 3rem;
+}
+.main_container .experience .sub_head {
+  text-align: center;
+}
+.main_container .team {
+  background-color: rgb(225, 239, 242);
+  padding: 3rem;
+}
+.main_container .team .sub_head {
+  text-align: center;
+}
+.main_container .contact_us {
+  padding: 3rem;
+}
+.main_container .contact_us .content {
+  text-align: center;
+}
+.main_container .contact_us .content .body_2 {
+  font-size: 1.375rem;
+}
+.main_container .contact_us .content .email {
+  font-size: 0.9375rem;
+}/*# sourceMappingURL=styles.css.map */
