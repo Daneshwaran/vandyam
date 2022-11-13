@@ -1,5 +1,6 @@
 .main_container {
   width: 100%;
+  min-width:800px;
   font-family: raleway, sans-serif;
 }
 .main_container .main_header {
