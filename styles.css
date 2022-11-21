@@ -1,6 +1,5 @@
 .main_container {
   width: 100%;
-  min-width:800px;
   font-family: raleway, sans-serif;
 }
 .main_container .main_header {
@@ -30,7 +29,6 @@
   letter-spacing: normal;
   line-height: 5.625rem;
   overflow-wrap: break-word;
-  width: 48.75rem;
   text-align: center;
   color: white;
 }
@@ -61,9 +59,10 @@
 .main_container .applications .row_2, .main_container .sensors .row_1,
 .main_container .sensors .row_2 {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   gap: 5rem;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 2rem;
   box-sizing: border-box;
 }
@@ -92,6 +91,15 @@
   padding: 3rem;
   box-sizing: border-box;
 }
+
+@media only screen and (max-width: 1120px) {
+  .main_container .capabilities {
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+  }
+}
+
 .main_container .capabilities .domain {
   flex-basis: 0;
   flex-grow: 1;
