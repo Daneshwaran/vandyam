@@ -26,6 +26,7 @@
   transform: translate(-50%, -50%);
   font-size: 4.5rem;
   font-weight: 700;
+  min-width: 60%;
   letter-spacing: normal;
   line-height: 5.625rem;
   overflow-wrap: break-word;
