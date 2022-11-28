@@ -1,0 +1,217 @@
+$color_1: white;
+$font-family_1: raleway, sans-serif;
+$font-family_2: "Avenir Light";
+$background-color_1: rgb(225, 239, 242);
+$background-color_2: rgb(241, 241, 241);
+
+/*# sourceMappingURL=styles.css.map */
+.main_container {
+	width: 100%;
+	font-family: $font-family_1;
+	.main_header {
+		font-size: 2.5rem;
+		border-bottom: 1px solid black;
+		text-align: center;
+	}
+	.nav_links {
+		list-style-type: none;
+		display: flex;
+		gap: 0.5rem;
+		justify-content: center;
+		li {
+			cursor: pointer;
+		}
+	}
+	.banner {
+		position: relative;
+		.banner_text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 4.5rem;
+			font-weight: 700;
+			min-width: 60%;
+			letter-spacing: normal;
+			line-height: 5.625rem;
+			overflow-wrap: break-word;
+			text-align: center;
+			color: $color_1;
+		}
+		img {
+			width: 100%;
+			height: 50rem;
+		}
+	}
+	.sub_head {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+	.body_content {
+		font-family: $font-family_2;
+	}
+	ul {
+		text-align: left;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		margin: 1rem auto;
+		max-width: 26rem;
+	}
+	.applications {
+		background-color: $background-color_1;
+		padding: 3rem;
+		.row_1 {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			gap: 5rem;
+			justify-content: space-evenly;
+			padding: 2rem;
+			box-sizing: border-box;
+			.app {
+				text-align: center;
+				img {
+					height: 8.875rem;
+					width: 8.875rem;
+				}
+				.label {
+					text-align: center;
+					margin-top: 1rem;
+					font-size: 1.375rem;
+					min-width: 15rem;
+				}
+			}
+		}
+		.row_2 {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			gap: 5rem;
+			justify-content: space-evenly;
+			padding: 2rem;
+			box-sizing: border-box;
+			.app {
+				text-align: center;
+				img {
+					height: 8.875rem;
+					width: 8.875rem;
+				}
+				.label {
+					text-align: center;
+					margin-top: 1rem;
+					font-size: 1.375rem;
+					min-width: 15rem;
+				}
+			}
+		}
+	}
+	.sensors {
+		background-color: $background-color_1;
+		padding: 3rem;
+		.row_1 {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			gap: 5rem;
+			justify-content: space-evenly;
+			padding: 2rem;
+			box-sizing: border-box;
+			.app {
+				text-align: center;
+				img {
+					height: 8.875rem;
+					width: 8.875rem;
+				}
+				.label {
+					text-align: center;
+					margin-top: 1rem;
+					font-size: 1.375rem;
+					min-width: 15rem;
+				}
+			}
+		}
+		.row_2 {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			gap: 5rem;
+			justify-content: space-evenly;
+			padding: 2rem;
+			box-sizing: border-box;
+			.app {
+				text-align: center;
+				img {
+					height: 8.875rem;
+					width: 8.875rem;
+				}
+				.label {
+					text-align: center;
+					margin-top: 1rem;
+					font-size: 1.375rem;
+					min-width: 15rem;
+				}
+			}
+		}
+	}
+	.capabilities {
+		display: flex;
+		width: 100%;
+		padding: 3rem;
+		box-sizing: border-box;
+		.domain {
+			flex-basis: 0;
+			flex-grow: 1;
+			text-align: center;
+		}
+		.technical {
+			flex-grow: 1;
+			flex-basis: 0;
+			text-align: center;
+		}
+	}
+	.experience {
+		background-color: $background-color_2;
+		padding: 3rem;
+		.sub_head {
+			text-align: center;
+		}
+	}
+	.team {
+		background-color: $background-color_1;
+		padding: 3rem;
+		.sub_head {
+			text-align: center;
+		}
+	}
+	.contact_us {
+		padding: 3rem;
+		.content {
+			text-align: center;
+			.body_2 {
+				font-size: 1.375rem;
+			}
+			.email {
+				font-size: 0.9375rem;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 600px) {
+	.main_container {
+		.banner {
+			.banner_text {
+				font-size: 3rem;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1120px) {
+	.main_container {
+		.capabilities {
+			display: flex;
+			flex-direction: column;
+			gap: 4rem;
+		}
+	}
+}
