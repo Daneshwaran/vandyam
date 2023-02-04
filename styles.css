@@ -113,14 +113,14 @@ body {
   background: linear-gradient(89.12deg, #f0f1f3 8.02%, rgba(238, 239, 240, 0) 96.74%);
   padding-top: 8rem;
 }
-.main_container .digital_era_container .row {
+.main_container .digital_era_container .wrapper {
   display: flex;
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
   margin-top: 2rem;
 }
-.main_container .card {
+.main_container .digital_era_container .wrapper .card_container {
   font-family: "Raleway";
   font-style: normal;
   font-weight: bold;
@@ -129,21 +129,21 @@ body {
   letter-spacing: 0.05em;
   color: #1f3f68;
   background-color: #ffffff;
-  max-width: 18rem;
   padding: 4rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
   align-items: center;
   box-shadow: 5px 20px 50px rgba(135, 135, 135, 0.34);
   border-radius: 10px;
 }
-.main_container .card .grapics {
+.main_container .digital_era_container .wrapper .card_container .grapics {
   height: 15rem;
+  width: 16.25rem;
   display: grid;
   place-items: center;
 }
-.main_container .card .card_body {
+.main_container .digital_era_container .wrapper .card_container .card_body {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -151,7 +151,6 @@ body {
   line-height: 26px;
   letter-spacing: 0.05em;
   color: #1f3f68;
-  opacity: 0.6;
 }
 .main_container .sensors_section {
   background: linear-gradient(89.12deg, #f0f1f3 8.02%, rgba(238, 239, 240, 0) 96.74%);
@@ -172,10 +171,9 @@ body {
   justify-content: center;
 }
 .main_container .sensors_section .wrapper .sensors {
-  background: linear-gradient(89.12deg, #f0f1f3 8.02%, rgba(238, 239, 240, 0) 96.74%);
   padding: 3rem;
 }
-.main_container .sensors_section .wrapper .sensors .row {
+.main_container .sensors_section .wrapper .sensors .wrapper {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -184,22 +182,22 @@ body {
   padding: 2rem;
   box-sizing: border-box;
 }
-.main_container .sensors_section .wrapper .sensors .row .app {
+.main_container .sensors_section .wrapper .sensors .wrapper .app {
   text-align: center;
 }
-.main_container .sensors_section .wrapper .sensors .row .app img {
+.main_container .sensors_section .wrapper .sensors .wrapper .app img {
   height: 8.875rem;
   width: 8.875rem;
 }
-.main_container .sensors_section .wrapper .sensors .row .app .label {
+.main_container .sensors_section .wrapper .sensors .wrapper .app .label {
   text-align: center;
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 20px;
   line-height: 46px;
   letter-spacing: 0.05em;
-  color: #316099;
+  color: #1f3f68;
   margin-top: 1rem;
   min-width: 15rem;
 }

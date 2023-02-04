@@ -120,45 +120,44 @@ body {
   .digital_era_container {
     background: $color-bg-grey;
     padding-top: 8rem;
-    .row {
+    .wrapper {
       display: flex;
       justify-content: center;
       gap: 2rem;
       padding: 2rem;
       margin-top: 2rem;
-    }
-  }
-  .card {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-    color: #1f3f68;
-    background-color: #ffffff;
-    max-width: 18rem;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    box-shadow: 5px 20px 50px rgba(135, 135, 135, 0.34);
-    border-radius: 10px;
-    .grapics {
-      height: 15rem;
-      display: grid;
-      place-items: center;
-    }
-    .card_body {
-      font-family: "Raleway";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      letter-spacing: 0.05em;
-      color: #1f3f68;
-      opacity: 0.6;
+      .card_container {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        color: #1f3f68;
+        background-color: #ffffff;
+        padding: 4rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        box-shadow: 5px 20px 50px rgba(135, 135, 135, 0.34);
+        border-radius: 10px;
+        .grapics {
+          height: 15rem;
+          width: 16.25rem;
+          display: grid;
+          place-items: center;
+        }
+        .card_body {
+          font-family: "Raleway";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: 0.05em;
+          color: #1f3f68;
+        }
+      }
     }
   }
   .sensors_section {
@@ -179,7 +178,7 @@ body {
       justify-content: center;
       .sensors {
         padding: 3rem;
-        .row {
+        .wrapper {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
@@ -197,11 +196,11 @@ body {
               text-align: center;
               font-family: "Raleway";
               font-style: normal;
-              font-weight: 300;
+              font-weight: bold;
               font-size: 20px;
               line-height: 46px;
               letter-spacing: 0.05em;
-              color: #316099;
+              color: #1f3f68;
               margin-top: 1rem;
               min-width: 15rem;
             }
