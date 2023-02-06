@@ -12,11 +12,14 @@ body {
   font-size: 36px;
   line-height: 46px;
   letter-spacing: 0.05em;
-  color: #316099;
+  color: #009c86;
 }
 .main_container .nav_bar {
   display: flex;
   padding: 2rem;
+}
+.main_container .nav_bar img {
+  height: 2.75rem;
 }
 .main_container .nav_bar .spacer {
   flex-grow: 1;
@@ -24,14 +27,44 @@ body {
 .main_container .nav_bar .nav_links {
   display: flex;
   gap: 2rem;
+  align-items: center;
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 2px;
   font-size: 1rem;
+}
+.main_container .nav_bar .nav_links .link {
+  position: relative;
+  height: 100%;
+}
+.main_container .nav_bar .nav_links .link a {
+  all: unset;
 }
 .main_container .nav_bar .nav_links .link:hover {
   color: #009c86;
   cursor: pointer;
+}
+.main_container .nav_bar .nav_links .link:hover .sub_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.main_container .nav_bar .nav_links .sub_menu {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  background-color: rgb(53, 55, 69);
+  color: #FFFFFF;
+  padding: 1rem;
+}
+.main_container .nav_bar .nav_links .sub_menu .item {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.main_container .nav_bar .nav_links .sub_menu .item:hover {
+  text-decoration: underline;
 }
 .main_container .hydrophonics_heading {
   text-align: center;
@@ -50,7 +83,7 @@ body {
 }
 .main_container .device_container {
   padding-top: 8rem;
-  background: linear-gradient(89.12deg, #f0f1f3 8.02%, rgba(238, 239, 240, 0) 96.74%);
+  background: #F5FCFF;
 }
 .main_container .device_container .device_view {
   position: relative;
@@ -65,7 +98,7 @@ body {
 .main_container .device_container .device_view .widget {
   position: absolute;
   background-color: rgb(243, 244, 245);
-  width: 10rem;
+  width: 12rem;
   padding: 1rem;
   display: flex;
   gap: 0.5rem;
@@ -92,6 +125,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 1rem;
+  text-align: left;
 }
 .main_container .device_container .device_view .alerts {
   top: 8rem;
@@ -110,7 +144,7 @@ body {
   right: 0;
 }
 .main_container .digital_era_container {
-  background: linear-gradient(89.12deg, #f0f1f3 8.02%, rgba(238, 239, 240, 0) 96.74%);
+  background: #F5FCFF;
   padding-top: 8rem;
 }
 .main_container .digital_era_container .wrapper {
@@ -153,18 +187,8 @@ body {
   color: #1f3f68;
 }
 .main_container .sensors_section {
-  background: linear-gradient(89.12deg, #f0f1f3 8.02%, rgba(238, 239, 240, 0) 96.74%);
+  background: #F5FCFF;
   padding-top: 8rem;
-}
-.main_container .sensors_section .sub_head {
-  text-align: center;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 46px;
-  letter-spacing: 0.05em;
-  color: #316099;
 }
 .main_container .sensors_section .wrapper {
   display: flex;
@@ -230,14 +254,14 @@ body {
   font-size: 1rem;
   display: flex;
   gap: 2rem;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.main_container .about_us .col {
+.main_container .about_us .column {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.main_container .about_us .col .head {
+.main_container .about_us .column .head {
   font-size: 1.4rem;
   font-weight: bold;
 }
