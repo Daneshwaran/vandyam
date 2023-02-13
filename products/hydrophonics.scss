@@ -31,6 +31,9 @@ body {
       font-weight: 500;
       letter-spacing: 2px;
       font-size: 1rem;
+      @media only screen and (max-width: 800px) {
+        display: none;
+      }
       .link {
         position: relative;
         height: 100%;
