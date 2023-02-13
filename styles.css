@@ -190,7 +190,7 @@ body {
   font-family: "Raleway";
   font-style: normal;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   line-height: 1.875rem;
   letter-spacing: 0.05em;
   color: #1f3f68;
@@ -199,14 +199,14 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
   box-shadow: 0.3125rem 1.25rem 3.125rem rgba(135, 135, 135, 0.34);
   border-radius: 0.625rem;
 }
 .main_container .digital_era_container .wrapper .card_container .grapics {
   height: 15rem;
-  width: 16.25rem;
+  width: 10rem;
   display: grid;
   place-items: center;
 }
@@ -214,14 +214,14 @@ body {
   width: 100%;
 }
 .main_container .digital_era_container .wrapper .card_container .card_head {
-  padding-left: 1.3rem;
+  padding-left: 2rem;
 }
 .main_container .digital_era_container .wrapper .card_container .card_body {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   letter-spacing: 0.05em;
   color: #1f3f68;
 }
