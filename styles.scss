@@ -4,13 +4,13 @@ html,
 body {
   margin: 0;
   min-width: 360px;
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 800px) {
     font-size: 12px;
   }
-  @media only screen and (max-width: 31.25rem) {
+  @media only screen and (max-width: 500px) {
     font-size: 8px;
   }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 400px) {
     font-size: 6px;
   }
 }
@@ -28,18 +28,25 @@ body {
     padding: 0 2rem;
     color: $color-primar-green;
   }
+  nav {
+    display: none;
+    padding-top: 1rem;
+    @media only screen and (max-width: 900px) {
+      display: block;
+    }
+  }
   .nav_bar {
     display: flex;
     padding: 2rem;
     justify-content: center;
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
     img {
       height: 2.75rem;
     }
     .spacer {
       flex-grow: 1;
-      @media only screen and (max-width: 50rem) {
-        display: none;
-      }
     }
     .nav_links {
       display: flex;
@@ -48,11 +55,8 @@ body {
       font-family: "Raleway";
       font-style: normal;
       font-weight: 500;
-      letter-spacing: .125rem;
+      letter-spacing: 0.125rem;
       font-size: 1rem;
-      @media only screen and (max-width: 50rem) {
-        display: none;
-      }
       .link {
         position: relative;
         height: 100%;
@@ -103,7 +107,7 @@ body {
   .device_container {
     padding-top: 4rem;
     background: $color-bg-grey;
-   
+
     .device_view {
       position: relative;
       max-width: 54rem;
@@ -123,7 +127,7 @@ body {
         display: flex;
         gap: 0.5rem;
         align-items: center;
-        box-shadow: 0rem .25rem .9375rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0rem 0.25rem 0.9375rem rgba(0, 0, 0, 0.15);
         backdrop-filter: blur(1.875rem);
         border-radius: 1.25rem;
         .icon {
@@ -187,18 +191,18 @@ body {
         flex-wrap: wrap;
         gap: 2rem;
         align-items: center;
-        box-shadow: .3125rem 1.25rem 3.125rem rgba(135, 135, 135, 0.34);
-        border-radius: .625rem;
+        box-shadow: 0.3125rem 1.25rem 3.125rem rgba(135, 135, 135, 0.34);
+        border-radius: 0.625rem;
         .grapics {
           height: 15rem;
           width: 10rem;
           display: grid;
           place-items: center;
-          img{
+          img {
             width: 100%;
           }
         }
-        .card_head{
+        .card_head {
           padding-left: 2rem;
         }
         .card_body {
@@ -271,7 +275,7 @@ body {
       gap: 2rem;
       padding: 2rem;
       flex-wrap: wrap;
-      img{
+      img {
         width: 18rem;
       }
     }

@@ -4,22 +4,22 @@ body {
   width: 100%;
   scroll-behavior: smooth;
 }
-@media only screen and (max-width: 50rem) {
+@media only screen and (max-width: 800px) {
   html,
   body {
-    font-size: 0.75rem;
+    font-size: 12px;
   }
 }
-@media only screen and (max-width: 31.25rem) {
+@media only screen and (max-width: 500px) {
   html,
   body {
-    font-size: 0.5rem;
+    font-size: 8px;
   }
 }
-@media only screen and (max-width: 25rem) {
+@media only screen and (max-width: 400px) {
   html,
   body {
-    font-size: 0.375rem;
+    font-size: 6px;
   }
 }
 
@@ -28,11 +28,29 @@ body {
   height: 100%;
   background-color: #F5FCFF;
 }
+.main_container nav {
+  display: none;
+  padding-top: 1rem;
+}
+@media only screen and (max-width: 900px) {
+  .main_container nav {
+    display: block;
+  }
+}
 .main_container .nav_bar {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
   display: flex;
   padding: 2rem;
   padding-bottom: 0.7rem;
   background-color: #FFFFFF;
+}
+@media only screen and (max-width: 900px) {
+  .main_container .nav_bar {
+    display: none;
+  }
 }
 .main_container .nav_bar img {
   height: 2.75rem;
@@ -49,11 +67,6 @@ body {
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 1rem;
-}
-@media only screen and (max-width: 800px) {
-  .main_container .nav_bar .nav_links {
-    display: none;
-  }
 }
 .main_container .nav_bar .nav_links .link {
   position: relative;
@@ -78,6 +91,7 @@ body {
   background-color: rgb(53, 55, 69);
   color: #FFFFFF;
   padding: 1rem;
+  z-index: 100;
 }
 .main_container .nav_bar .nav_links .sub_menu .item {
   width: -moz-max-content;
@@ -86,64 +100,26 @@ body {
 .main_container .nav_bar .nav_links .sub_menu .item:hover {
   text-decoration: underline;
 }
-.main_container .carousel {
-  width: 100%;
-  height: 90%;
-  max-height: 49rem;
-  position: absolute;
-  vertical-align: middle;
+.main_container #carouselExampleIndicators {
+  height: 850px;
 }
-.main_container .slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
-  margin-bottom: 1rem;
-}
-.main_container .slide > img {
-  display: block;
-  width: 100%;
+.main_container #carouselExampleIndicators .carousel-inner {
   height: 100%;
+}
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item {
+  height: 100%;
+}
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  height: 100%;
+  width: 100%;
 }
-.main_container .slide[data-active] {
-  opacity: 1;
-  z-index: 1;
-  transition-delay: 0ms;
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption {
+  top: 20rem;
 }
-.main_container .carousel-button {
-  position: absolute;
-  z-index: 2;
-  background: none;
-  border: none;
-  font-size: 4rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  border-radius: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.main_container .carousel-button:hover,
-.main_container .carousel-button:focus {
-  color: white;
-  background-color: 0, 0, 0, 0.2;
-}
-.main_container .carousel-button:focus {
-  outline: 1px solid black;
-}
-.main_container .carousel-button.prev {
-  left: 1rem;
-}
-.main_container .carousel-button.next {
-  right: 1rem;
-}
-.main_container .slide[data-active] {
-  opacity: 1;
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 400%;
 }
 .main_container .heading1 {
   text-transform: uppercase;
@@ -171,7 +147,7 @@ body {
 .main_container section {
   max-width: 1189px;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 .main_container section .container {
   display: flex;
@@ -192,6 +168,16 @@ body {
 .main_container section .container .hydrophonics_2 {
   display: grid;
   place-content: center;
+}
+.main_container section.device_container {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.main_container section.device_container img {
+  width: 25rem;
 }
 .main_container section.iot_hydrophics .container {
   flex-direction: column;

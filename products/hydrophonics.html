@@ -8,6 +8,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <title>Vandyam</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon.png" />
     <link rel="stylesheet" href="hydrophonics.css" />
@@ -15,12 +21,86 @@
   </head>
   <body>
     <div class="main_container">
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/vandyam_logo.svg" alt="vandyam" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Vandyam</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html"> HOME </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span> IOT SOLUTIONS </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">HYDROPHONICS</a></li>
+                    <li><a class="dropdown-item" href="#">MINING</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span> SERVICES </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Firmware engineering</a></li>
+                    <li><a class="dropdown-item" href="#">Embedded applications</a></li>
+                    <li><a class="dropdown-item" href="#">Full stack</a></li>
+                    <li><a class="dropdown-item" href="#">UI/UX</a></li>
+                    <li><a class="dropdown-item" href="#">Buisness consulting</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about_us"> ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about_us"> CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
       <div class="nav_bar">
         <a href="../index.html">
           <img src="../assets/vandyam_logo.svg" alt="vandyam" />
         </a>
         <div class="spacer"></div>
         <div class="nav_links">
+          <div class="link"><a href="../index.html"> HOME </a></div>
           <div class="link">
             <span> IOT SOLUTIONS </span>
             <div class="sub_menu">
@@ -42,51 +122,77 @@
           <div class="link"><a href="#about_us"> CONTACT US </a></div>
         </div>
       </div>
-          <div class="carousel"data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-            <div data-slides>
-  
-          <div class="slide">
-            <img src="../assets/banner.png" alt="slide1" />
-          </div>
-          <div class="slide">
-            <img src="../assets/photos/cover_page3.jpg" alt="slide2" />
-          </div>
-          <div class="slide" data-active>
-            <img src="../assets/photos/cover_page4.png" alt="slide4" />
-          </div>
-          </div>
-          </div> 
-
-        <section>
-        <div class="heading1">What is Hydroponic ?</div>
-        <div class="container">
-          <div class="text">
-            <div>
-              Current agriculture advancement is being challenged like neverbefore with sustainable food production and
-              security in a demographically obese world. Climate change is another major challenge that contemporary
-              farming practice tries to overcome. Conventional soil dependent farming practices make farmers vulnerable
-              to various manifestations of climate change.
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../assets/banner/slide_3.jpg" alt="slide3" />
+            <div class="carousel-caption d-md-block">
+              <h1>Vandyam solutions smart hydrophonics farming</h1>
             </div>
-            <p>
-              Hydroponic is a method where the crops are grown in the absence of soil the nutrients that are acquired
-              from the soil are given to them artificially. This soil less culture of originating crops often involves
-              their roots to be immersed in the nutrient solution along with some gravels or perlite medium. The maximum
-              yield is achieved by the supply of sufficient quantity of nutrients and optimum microclimatic conditions
-              are the main goal of hydroponics.
-            </p>
           </div>
-          <div class="image">
-            <img src="../assets/photos/hydrophonics.jpg" alt="hydrophonics" />
+          <div class="carousel-item">
+            <img src="../assets/banner/slide_2.jpg" alt="slide3" />
+            <div class="carousel-caption d-md-block">
+              <h1>Vandyam solutions smart hydrophonics farming</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/banner/slide_1.jpg" alt="slide3" />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Vandyam solutions smart hydrophonics farming</h1>
+            </div>
           </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="device_container">
+        <img class="d-" src="../assets/photos/device_formatted.png" alt="slide3" />
+        <div class="heading">HYDROPHONIC MONITORING</div>
       </section>
       <section class="iot_hydrophics">
         <div class="heading">IoT in Hydroponics</div>
         <div class="container">
           <div class="image">
-            <img src="../assets/photos/hydrophonics_graphics.png" alt="hydrophonics" />
+            <img src="../assets/photos/iot_in_hydrophonics.png" alt="hydrophonics" />
           </div>
           <div class="text">
             <div>
@@ -107,14 +213,6 @@
               nutrient mixer manually is a tedious process and may lead to human errors which will affect the overall
               yield.
             </p>
-            <p>
-              This system aims to provide the ideal environment for plants to grow, a system where pH, water level, air
-              temperature and relative humidity are constantly monitored. Additionally, with the use of simple
-              mechanisms, this system provides controlled irrigation of water, and nutrient solution intake. Through the
-              data gathered by the sensors and the use of cloud based technology as the backend, information is stored,
-              managed, applied and shared via internet by users. Management of resources in a hydroponics set-up would
-              become easier and more efficient
-            </p>
           </div>
         </div>
       </section>
@@ -123,19 +221,11 @@
         <div class="container">
           <div class="text">
             <ul>
-              <li>
-                Manual intervention in monitoring critical parameters is labour intensive and might lead to human error
-              </li>
-              <li>Maintaining parameters as according to seasonal changes</li>
-              <li>Accessibility to farm performance data remotely</li>
-              <li>
-                Non availability of historical data such as pH, TDS, Temp, light intesity and energy consumption to
-                study and make & execute intelligent & informed decisions
-              </li>
-              <li>
-                Manual monitoring is in practice which is a very trivial task because the plants may die out if there is
-                no proper care is taken.
-              </li>
+              <li>Manual intervention</li>
+              <li>Seasonal changes</li>
+              <li>Remotely data accessibility</li>
+              <li>Non availability of historical data</li>
+              <li>Manual monitoring</li>
             </ul>
           </div>
           <div class="image"></div>
@@ -144,9 +234,9 @@
       <section>
         <div class="heading">Benefits of IoT in Hydroponic farming</div>
         <div class="container">
-          <div class="image hydrophonics_2">
+          <!-- <div class="image hydrophonics_2">
             <img src="../assets/photos/hydrophonics_2.jpg" alt="hydrophonics" />
-          </div>
+          </div> -->
           <div class="text">
             <ul>
               <li>
@@ -177,26 +267,19 @@
       <div id="about_us" class="about_us">
         <div class="column">
           <span class="head">Vandyam Solutions</span>
-          <span>Lorem ipsum dolor sit amet,</span>
-          <span>consectetur adipisicing elit.</span>
-          <span>+62-812-7313-4321</span>
           <span>office@vandyam.com</span>
         </div>
-        <!-- <div class="col">
-          <div class="head">About US</div>
-          <div>About</div>
-          <div>What we do</div>
-          <div>Project</div>
-          <div>How it work with us</div>
-        </div> -->
         <div class="column">
           <span class="head">Follow US</span>
-          <span>Instagram</span>
           <span>Facebook</span>
           <span>LinkedIn</span>
-          <span>Youtube</span>
         </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

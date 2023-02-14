@@ -22,6 +22,79 @@
   </head>
   <body>
     <div class="main_container">
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/vandyam_logo.svg" alt="vandyam" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Vandyam</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html"> HOME </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span> IOT SOLUTIONS </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./products/hydrophonics.html">HYDROPHONICS</a></li>
+                    <li><a class="dropdown-item" href="#">MINING</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span> SERVICES </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Firmware engineering</a></li>
+                    <li><a class="dropdown-item" href="#">Embedded applications</a></li>
+                    <li><a class="dropdown-item" href="#">Full stack</a></li>
+                    <li><a class="dropdown-item" href="#">UI/UX</a></li>
+                    <li><a class="dropdown-item" href="#">Buisness consulting</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about_us"> ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about_us"> CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
       <div class="nav_bar">
         <a href="./index.html">
           <img src="./assets/vandyam_logo.svg" alt="vandyam" />
@@ -165,24 +238,13 @@
       <div id="about_us" class="about_us">
         <div class="column">
           <span class="head">Vandyam Solutions</span>
-          <span>Lorem ipsum dolor sit amet,</span>
-          <span>consectetur adipisicing elit.</span>
-          <span>+62-812-7313-4321</span>
           <span>office@vandyam.com</span>
         </div>
-        <!-- <div class="col">
-          <div class="head">About US</div>
-          <div>About</div>
-          <div>What we do</div>
-          <div>Project</div>
-          <div>How it work with us</div>
-        </div> -->
+
         <div class="column">
           <span class="head">Follow US</span>
-          <span>Instagram</span>
           <span>Facebook</span>
           <span>LinkedIn</span>
-          <span>Youtube</span>
         </div>
       </div>
     </div>

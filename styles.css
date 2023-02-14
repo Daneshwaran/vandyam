@@ -3,19 +3,19 @@ body {
   margin: 0;
   min-width: 360px;
 }
-@media only screen and (max-width: 50rem) {
+@media only screen and (max-width: 800px) {
   html,
   body {
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 31.25rem) {
+@media only screen and (max-width: 500px) {
   html,
   body {
     font-size: 8px;
   }
 }
-@media only screen and (max-width: 25rem) {
+@media only screen and (max-width: 400px) {
   html,
   body {
     font-size: 6px;
@@ -34,21 +34,30 @@ body {
   padding: 0 2rem;
   color: #009c86;
 }
+.main_container nav {
+  display: none;
+  padding-top: 1rem;
+}
+@media only screen and (max-width: 900px) {
+  .main_container nav {
+    display: block;
+  }
+}
 .main_container .nav_bar {
   display: flex;
   padding: 2rem;
   justify-content: center;
+}
+@media only screen and (max-width: 900px) {
+  .main_container .nav_bar {
+    display: none;
+  }
 }
 .main_container .nav_bar img {
   height: 2.75rem;
 }
 .main_container .nav_bar .spacer {
   flex-grow: 1;
-}
-@media only screen and (max-width: 50rem) {
-  .main_container .nav_bar .spacer {
-    display: none;
-  }
 }
 .main_container .nav_bar .nav_links {
   display: flex;
@@ -59,11 +68,6 @@ body {
   font-weight: 500;
   letter-spacing: 0.125rem;
   font-size: 1rem;
-}
-@media only screen and (max-width: 50rem) {
-  .main_container .nav_bar .nav_links {
-    display: none;
-  }
 }
 .main_container .nav_bar .nav_links .link {
   position: relative;
