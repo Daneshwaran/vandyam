@@ -4,6 +4,7 @@ html,
 body {
   margin: 0;
   width: 100%;
+  min-width: 360px;
   scroll-behavior: smooth;
   @media only screen and (max-width: 800px) {
     font-size: 12px;
@@ -147,6 +148,7 @@ section {
   margin: auto;
   margin-top: 5rem;
   width: 100%;
+  padding: 2rem;
   .container {
     display: flex;
     gap: 2rem;
@@ -174,9 +176,12 @@ section.device_container {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 2rem;
   img {
     width: 25rem;
+    object-fit: contain;
+    min-height: 20rem;
   }
 }
 section.iot_hydrophics {
@@ -186,6 +191,8 @@ section.iot_hydrophics {
       text-align: center;
       img {
         width: 40rem;
+        object-fit: contain;
+        min-height: 25rem;
       }
     }
   }

@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   width: 100%;
+  min-width: 360px;
   scroll-behavior: smooth;
 }
 @media only screen and (max-width: 800px) {
@@ -161,6 +162,7 @@ section {
   margin: auto;
   margin-top: 5rem;
   width: 100%;
+  padding: 2rem;
 }
 section .container {
   display: flex;
@@ -189,10 +191,14 @@ section.device_container {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 2rem;
 }
 section.device_container img {
   width: 25rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  min-height: 20rem;
 }
 
 section.iot_hydrophics .container {
@@ -203,6 +209,9 @@ section.iot_hydrophics .container .image {
 }
 section.iot_hydrophics .container .image img {
   width: 40rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  min-height: 25rem;
 }
 
 .about_us {
