@@ -152,6 +152,7 @@ body {
 }
 .main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h1 {
   font-size: 400%;
+  text-transform: uppercase;
 }
 .main_container .device_container {
   padding-top: 4rem;
