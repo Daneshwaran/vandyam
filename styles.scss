@@ -5,13 +5,13 @@ body {
   margin: 0;
   min-width: 360px;
   @media only screen and (max-width: 50rem) {
-    font-size: .75rem;
+    font-size: 12px;
   }
   @media only screen and (max-width: 31.25rem) {
-    font-size: .5rem;
+    font-size: 8px;
   }
   @media only screen and (max-width: 25rem) {
-    font-size: .375rem;
+    font-size: 6px;
   }
 }
 
@@ -101,7 +101,7 @@ body {
     }
   }
   .device_container {
-    padding-top: 8rem;
+    padding-top: 4rem;
     background: $color-bg-grey;
     .device_view {
       position: relative;
