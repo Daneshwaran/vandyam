@@ -50,6 +50,12 @@ body {
   width: 2rem;
   height: 2rem;
 }
+.main_container nav .offcanvas {
+  font-size: 3rem;
+}
+.main_container nav .offcanvas a {
+  font-size: 3rem;
+}
 .main_container .nav_bar {
   position: sticky;
   width: 100%;

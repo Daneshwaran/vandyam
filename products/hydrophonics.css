@@ -36,6 +36,19 @@ body {
   .main_container nav {
     display: block;
   }
+  .main_container nav img {
+    width: 100px;
+  }
+  .main_container nav .navbar-toggler-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .main_container nav .offcanvas {
+    font-size: 3rem;
+  }
+  .main_container nav .offcanvas a {
+    font-size: 3rem;
+  }
 }
 .main_container .nav_bar {
   position: sticky;
@@ -51,14 +64,17 @@ body {
   .main_container .nav_bar {
     display: none;
   }
+  .main_container .nav_bar img {
+    width: 100px;
+  }
 }
-.main_container .nav_bar img {
+.main_container img {
   height: 2.75rem;
 }
-.main_container .nav_bar .spacer {
+.main_container .spacer {
   flex-grow: 1;
 }
-.main_container .nav_bar .nav_links {
+.main_container .nav_links {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -68,23 +84,23 @@ body {
   letter-spacing: 2px;
   font-size: 1rem;
 }
-.main_container .nav_bar .nav_links .link {
+.main_container .nav_links .link {
   position: relative;
   height: 100%;
 }
-.main_container .nav_bar .nav_links .link a {
+.main_container .nav_links .link a {
   all: unset;
 }
-.main_container .nav_bar .nav_links .link:hover {
+.main_container .nav_links .link:hover {
   color: #009c86;
   cursor: pointer;
 }
-.main_container .nav_bar .nav_links .link:hover .sub_menu {
+.main_container .nav_links .link:hover .sub_menu {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
-.main_container .nav_bar .nav_links .sub_menu {
+.main_container .nav_links .sub_menu {
   display: none;
   position: absolute;
   top: 2rem;
@@ -93,35 +109,37 @@ body {
   padding: 1rem;
   z-index: 100;
 }
-.main_container .nav_bar .nav_links .sub_menu .item {
+.main_container .nav_links .sub_menu .item {
   width: -moz-max-content;
   width: max-content;
 }
-.main_container .nav_bar .nav_links .sub_menu .item:hover {
+.main_container .nav_links .sub_menu .item:hover {
   text-decoration: underline;
 }
-.main_container #carouselExampleIndicators {
-  height: 850px;
+
+#carouselExampleIndicators {
+  height: 50rem;
 }
-.main_container #carouselExampleIndicators .carousel-inner {
+#carouselExampleIndicators .carousel-inner {
   height: 100%;
 }
-.main_container #carouselExampleIndicators .carousel-inner .carousel-item {
+#carouselExampleIndicators .carousel-inner .carousel-item {
   height: 100%;
 }
-.main_container #carouselExampleIndicators .carousel-inner .carousel-item img {
+#carouselExampleIndicators .carousel-inner .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
   width: 100%;
 }
-.main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption {
-  top: 300px;
+#carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption {
+  top: 18.75rem;
 }
-.main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h1 {
+#carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h1 {
   font-size: 400%;
 }
-.main_container .heading {
+
+.heading {
   text-transform: uppercase;
   text-align: left;
   font-family: "Raleway";
@@ -133,22 +151,23 @@ body {
   color: #009c86;
 }
 @media only screen and (max-width: 900px) {
-  .main_container .heading {
+  .heading {
     text-align: center;
   }
 }
-.main_container section {
+
+section {
   max-width: 1189px;
   margin: auto;
   margin-top: 5rem;
   width: 100%;
 }
-.main_container section .container {
+section .container {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
-.main_container section .container .text {
+section .container .text {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -157,33 +176,36 @@ body {
   letter-spacing: 0.05em;
   text-align: justify;
 }
-.main_container section .container img {
+section .container img {
   width: 30rem;
 }
-.main_container section .container .hydrophonics_2 {
+section .container .hydrophonics_2 {
   display: grid;
   place-content: center;
 }
-.main_container section.device_container {
+
+section.device_container {
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 2rem;
 }
-.main_container section.device_container img {
+section.device_container img {
   width: 25rem;
 }
-.main_container section.iot_hydrophics .container {
+
+section.iot_hydrophics .container {
   flex-direction: column;
 }
-.main_container section.iot_hydrophics .container .image {
+section.iot_hydrophics .container .image {
   text-align: center;
 }
-.main_container section.iot_hydrophics .container .image img {
+section.iot_hydrophics .container .image img {
   width: 40rem;
 }
-.main_container .about_us {
+
+.about_us {
   margin-top: 2rem;
   background: #303030;
   padding: 4rem 2rem;
@@ -195,12 +217,12 @@ body {
   gap: 2rem;
   justify-content: space-evenly;
 }
-.main_container .about_us .column {
+.about_us .column {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.main_container .about_us .column .head {
+.about_us .column .head {
   font-size: 1.4rem;
   font-weight: bold;
 }/*# sourceMappingURL=hydrophonics.css.map */
