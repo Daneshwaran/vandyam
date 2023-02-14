@@ -103,6 +103,7 @@ body {
   .device_container {
     padding-top: 8rem;
     background: $color-bg-grey;
+   
     .device_view {
       position: relative;
       max-width: 54rem;
@@ -163,6 +164,7 @@ body {
   }
   .digital_era_container {
     background: $color-bg-grey;
+    background: pink;
     padding-top: 5rem;
     .wrapper {
       display: flex;
