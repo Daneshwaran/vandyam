@@ -4,29 +4,43 @@ body {
   width: 100%;
   scroll-behavior: smooth;
 }
-html .main_container,
-body .main_container {
+@media only screen and (max-width: 50rem) {
+  html,
+  body {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 31.25rem) {
+  html,
+  body {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (max-width: 25rem) {
+  html,
+  body {
+    font-size: 0.375rem;
+  }
+}
+
+.main_container {
   width: 100%;
   height: 100%;
   background-color: #F5FCFF;
 }
-html .main_container .nav_bar,
-body .main_container .nav_bar {
+.main_container .nav_bar {
   display: flex;
   padding: 2rem;
   padding-bottom: 0.7rem;
   background-color: #FFFFFF;
 }
-html .main_container .nav_bar img,
-body .main_container .nav_bar img {
+.main_container .nav_bar img {
   height: 2.75rem;
 }
-html .main_container .nav_bar .spacer,
-body .main_container .nav_bar .spacer {
+.main_container .nav_bar .spacer {
   flex-grow: 1;
 }
-html .main_container .nav_bar .nav_links,
-body .main_container .nav_bar .nav_links {
+.main_container .nav_bar .nav_links {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -37,33 +51,27 @@ body .main_container .nav_bar .nav_links {
   font-size: 1rem;
 }
 @media only screen and (max-width: 800px) {
-  html .main_container .nav_bar .nav_links,
-  body .main_container .nav_bar .nav_links {
+  .main_container .nav_bar .nav_links {
     display: none;
   }
 }
-html .main_container .nav_bar .nav_links .link,
-body .main_container .nav_bar .nav_links .link {
+.main_container .nav_bar .nav_links .link {
   position: relative;
   height: 100%;
 }
-html .main_container .nav_bar .nav_links .link a,
-body .main_container .nav_bar .nav_links .link a {
+.main_container .nav_bar .nav_links .link a {
   all: unset;
 }
-html .main_container .nav_bar .nav_links .link:hover,
-body .main_container .nav_bar .nav_links .link:hover {
+.main_container .nav_bar .nav_links .link:hover {
   color: #009c86;
   cursor: pointer;
 }
-html .main_container .nav_bar .nav_links .link:hover .sub_menu,
-body .main_container .nav_bar .nav_links .link:hover .sub_menu {
+.main_container .nav_bar .nav_links .link:hover .sub_menu {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
-html .main_container .nav_bar .nav_links .sub_menu,
-body .main_container .nav_bar .nav_links .sub_menu {
+.main_container .nav_bar .nav_links .sub_menu {
   display: none;
   position: absolute;
   top: 2rem;
@@ -71,31 +79,29 @@ body .main_container .nav_bar .nav_links .sub_menu {
   color: #FFFFFF;
   padding: 1rem;
 }
-html .main_container .nav_bar .nav_links .sub_menu .item,
-body .main_container .nav_bar .nav_links .sub_menu .item {
+.main_container .nav_bar .nav_links .sub_menu .item {
   width: -moz-max-content;
   width: max-content;
 }
-html .main_container .nav_bar .nav_links .sub_menu .item:hover,
-body .main_container .nav_bar .nav_links .sub_menu .item:hover {
+.main_container .nav_bar .nav_links .sub_menu .item:hover {
   text-decoration: underline;
 }
-html .main_container .carousel,
-body .main_container .carousel {
+.main_container .carousel {
   width: 100%;
-  height: 75%;
+  height: 90%;
+  max-height: 49rem;
   position: absolute;
+  vertical-align: middle;
 }
-html .main_container .slide,
-body .main_container .slide {
+.main_container .slide {
   position: absolute;
   inset: 0;
   opacity: 0;
   transition: 200ms opacity ease-in-out;
   transition-delay: 200ms;
+  margin-bottom: 1rem;
 }
-html .main_container .slide > img,
-body .main_container .slide > img {
+.main_container .slide > img {
   display: block;
   width: 100%;
   height: 100%;
@@ -104,14 +110,12 @@ body .main_container .slide > img {
   -o-object-position: center;
      object-position: center;
 }
-html .main_container .slide[data-active],
-body .main_container .slide[data-active] {
+.main_container .slide[data-active] {
   opacity: 1;
   z-index: 1;
   transition-delay: 0ms;
 }
-html .main_container .carousel-button,
-body .main_container .carousel-button {
+.main_container .carousel-button {
   position: absolute;
   z-index: 2;
   background: none;
@@ -124,31 +128,36 @@ body .main_container .carousel-button {
   border-radius: 0.5rem;
   background-color: rgba(0, 0, 0, 0.1);
 }
-html .main_container .carousel-button:hover,
-html .main_container .carousel-button:focus,
-body .main_container .carousel-button:hover,
-body .main_container .carousel-button:focus {
+.main_container .carousel-button:hover,
+.main_container .carousel-button:focus {
   color: white;
   background-color: 0, 0, 0, 0.2;
 }
-html .main_container .carousel-button:focus,
-body .main_container .carousel-button:focus {
+.main_container .carousel-button:focus {
   outline: 1px solid black;
 }
-html .main_container .carousel-button.prev,
-body .main_container .carousel-button.prev {
+.main_container .carousel-button.prev {
   left: 1rem;
 }
-html .main_container .carousel-button.next,
-body .main_container .carousel-button.next {
+.main_container .carousel-button.next {
   right: 1rem;
 }
-html .main_container .slide[data-active],
-body .main_container .slide[data-active] {
+.main_container .slide[data-active] {
   opacity: 1;
 }
-html .main_container .heading,
-body .main_container .heading {
+.main_container .heading1 {
+  text-transform: uppercase;
+  margin-top: 49rem;
+  text-align: left;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #009c86;
+}
+.main_container .heading {
   text-transform: uppercase;
   text-align: left;
   font-family: "Raleway";
@@ -159,20 +168,17 @@ body .main_container .heading {
   letter-spacing: 0.05em;
   color: #009c86;
 }
-html .main_container section,
-body .main_container section {
+.main_container section {
   max-width: 1189px;
   margin: auto;
   margin-top: 2rem;
 }
-html .main_container section .container,
-body .main_container section .container {
+.main_container section .container {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
-html .main_container section .container .text,
-body .main_container section .container .text {
+.main_container section .container .text {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -180,29 +186,23 @@ body .main_container section .container .text {
   line-height: 26px;
   letter-spacing: 0.05em;
 }
-html .main_container section .container img,
-body .main_container section .container img {
+.main_container section .container img {
   width: 30rem;
 }
-html .main_container section .container .hydrophonics_2,
-body .main_container section .container .hydrophonics_2 {
+.main_container section .container .hydrophonics_2 {
   display: grid;
   place-content: center;
 }
-html .main_container section.iot_hydrophics .container,
-body .main_container section.iot_hydrophics .container {
+.main_container section.iot_hydrophics .container {
   flex-direction: column;
 }
-html .main_container section.iot_hydrophics .container .image,
-body .main_container section.iot_hydrophics .container .image {
+.main_container section.iot_hydrophics .container .image {
   text-align: center;
 }
-html .main_container section.iot_hydrophics .container .image img,
-body .main_container section.iot_hydrophics .container .image img {
+.main_container section.iot_hydrophics .container .image img {
   width: 40rem;
 }
-html .main_container .about_us,
-body .main_container .about_us {
+.main_container .about_us {
   margin-top: 2rem;
   background: #303030;
   padding: 4rem 2rem;
@@ -214,14 +214,12 @@ body .main_container .about_us {
   gap: 2rem;
   justify-content: space-evenly;
 }
-html .main_container .about_us .column,
-body .main_container .about_us .column {
+.main_container .about_us .column {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-html .main_container .about_us .column .head,
-body .main_container .about_us .column .head {
+.main_container .about_us .column .head {
   font-size: 1.4rem;
   font-weight: bold;
 }/*# sourceMappingURL=hydrophonics.css.map */
