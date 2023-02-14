@@ -33,6 +33,13 @@ body {
     padding-top: 1rem;
     @media only screen and (max-width: 900px) {
       display: block;
+      img {
+        width: 100px;
+      }
+    }
+    .navbar-toggler-icon {
+      width: 2rem;
+      height: 2rem;
     }
   }
   .nav_bar {
@@ -106,7 +113,7 @@ body {
     padding-bottom: 2rem;
   }
   #carouselExampleIndicators {
-    height: 850px;
+    height: 50rem;
     .carousel-inner {
       height: 100%;
       .carousel-item {
@@ -118,7 +125,7 @@ body {
           filter: brightness(0.7);
         }
         .carousel-caption {
-          top: 300px;
+          top: 18.75rem;
           h1 {
             font-size: 400%;
           }

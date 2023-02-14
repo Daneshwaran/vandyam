@@ -42,6 +42,13 @@ body {
   .main_container nav {
     display: block;
   }
+  .main_container nav img {
+    width: 100px;
+  }
+}
+.main_container nav .navbar-toggler-icon {
+  width: 2rem;
+  height: 2rem;
 }
 .main_container .nav_bar {
   position: sticky;
@@ -117,7 +124,7 @@ body {
   padding-bottom: 2rem;
 }
 .main_container #carouselExampleIndicators {
-  height: 850px;
+  height: 50rem;
 }
 .main_container #carouselExampleIndicators .carousel-inner {
   height: 100%;
@@ -133,7 +140,7 @@ body {
   filter: brightness(0.7);
 }
 .main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption {
-  top: 300px;
+  top: 18.75rem;
 }
 .main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h1 {
   font-size: 400%;
