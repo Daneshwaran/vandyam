@@ -44,9 +44,15 @@ body {
   }
 }
 .main_container .nav_bar {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
   display: flex;
   padding: 2rem;
+  padding-bottom: 1rem;
   justify-content: center;
+  background-color: #FFFFFF;
 }
 @media only screen and (max-width: 900px) {
   .main_container .nav_bar {
@@ -92,6 +98,7 @@ body {
   background-color: rgb(53, 55, 69);
   color: #FFFFFF;
   padding: 1rem;
+  z-index: 100;
 }
 .main_container .nav_bar .nav_links .sub_menu .item {
   width: -moz-max-content;
@@ -109,11 +116,27 @@ body {
   font-size: 4rem;
   padding-bottom: 2rem;
 }
-.main_container .banner {
-  width: 100%;
+.main_container #carouselExampleIndicators {
+  height: 850px;
 }
-.main_container .banner img {
+.main_container #carouselExampleIndicators .carousel-inner {
+  height: 100%;
+}
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item {
+  height: 100%;
+}
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
   width: 100%;
+  filter: brightness(0.7);
+}
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption {
+  top: 300px;
+}
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 400%;
 }
 .main_container .device_container {
   padding-top: 4rem;

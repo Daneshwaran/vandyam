@@ -36,9 +36,15 @@ body {
     }
   }
   .nav_bar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 100;
     display: flex;
     padding: 2rem;
+    padding-bottom: 1rem;
     justify-content: center;
+    background-color: $color-bg-white;
     @media only screen and (max-width: 900px) {
       display: none;
     }
@@ -80,6 +86,7 @@ body {
         background-color: $color-bg-menu;
         color: $color-bg-white;
         padding: 1rem;
+        z-index: 100;
         .item {
           width: max-content;
           &:hover {
@@ -98,10 +105,25 @@ body {
     font-size: 4rem;
     padding-bottom: 2rem;
   }
-  .banner {
-    width: 100%;
-    img {
-      width: 100%;
+  #carouselExampleIndicators {
+    height: 850px;
+    .carousel-inner {
+      height: 100%;
+      .carousel-item {
+        height: 100%;
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          filter: brightness(0.7);
+        }
+        .carousel-caption {
+          top: 300px;
+          h1 {
+            font-size: 400%;
+          }
+        }
+      }
     }
   }
   .device_container {

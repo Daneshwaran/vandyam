@@ -101,26 +101,13 @@ body {
           width: 100%;
         }
         .carousel-caption {
-          top: 20rem;
+          top: 300px;
           h1 {
             font-size: 400%;
           }
         }
       }
     }
-  }
-
-  .heading1 {
-    text-transform: uppercase;
-    margin-top: 49rem;
-    text-align: left;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 46px;
-    letter-spacing: 0.05em;
-    color: $color-primar-green;
   }
 
   .heading {
@@ -133,11 +120,15 @@ body {
     line-height: 46px;
     letter-spacing: 0.05em;
     color: $color-primar-green;
+    @media only screen and (max-width: 900px) {
+      text-align: center;
+    }
   }
   section {
     max-width: 1189px;
     margin: auto;
     margin-top: 5rem;
+    width: 100%;
     .container {
       display: flex;
       gap: 2rem;
@@ -149,6 +140,7 @@ body {
         font-size: 16px;
         line-height: 26px;
         letter-spacing: 0.05em;
+        text-align: justify;
       }
       img {
         width: 30rem;
