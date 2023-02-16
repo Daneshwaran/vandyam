@@ -109,7 +109,9 @@ body {
 }
 
 #carouselExampleIndicators {
-  height: 50rem;
+  height: 45rem;
+  max-width: 2000px;
+  margin: auto;
   .carousel-inner {
     height: 100%;
     .carousel-item {
@@ -120,7 +122,7 @@ body {
         width: 100%;
       }
       .carousel-caption {
-        top: 18.75rem;
+        top: 15rem;
         h1 {
           font-size: 400%;
         }
@@ -146,7 +148,6 @@ body {
 section {
   max-width: 1189px;
   margin: auto;
-  margin-top: 5rem;
   width: 100%;
   padding: 2rem;
   .container {
@@ -179,9 +180,9 @@ section.device_container {
   flex-wrap: wrap;
   padding: 2rem;
   img {
-    width: 25rem;
+    width: 30rem;
     object-fit: contain;
-    min-height: 20rem;
+    min-height: 25rem;
   }
 }
 section.iot_hydrophics {
@@ -194,6 +195,18 @@ section.iot_hydrophics {
         object-fit: contain;
         min-height: 25rem;
       }
+    }
+  }
+}
+section.benefits_section {
+  .image {
+    text-align: center;
+    margin-bottom: 2rem;
+    img {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      object-fit: contain;
     }
   }
 }
