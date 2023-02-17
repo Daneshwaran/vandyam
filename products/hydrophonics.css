@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 html,
 body {
   margin: 0;
@@ -46,9 +47,13 @@ body {
   }
   .main_container nav .offcanvas {
     font-size: 3rem;
+    padding-left: 0.5rem;
   }
   .main_container nav .offcanvas a {
     font-size: 3rem;
+  }
+  .main_container nav btn-cloae {
+    margin: 1rem;
   }
 }
 .main_container .nav_bar {
@@ -117,32 +122,30 @@ body {
 .main_container .nav_links .sub_menu .item:hover {
   text-decoration: underline;
 }
-
-#carouselExampleIndicators {
+.main_container #carouselExampleIndicators {
   height: 45rem;
   max-width: 2000px;
   margin: auto;
 }
-#carouselExampleIndicators .carousel-inner {
+.main_container #carouselExampleIndicators .carousel-inner {
   height: 100%;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item {
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item {
   height: 100%;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item img {
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
   width: 100%;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption {
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption {
   top: 15rem;
 }
-#carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h1 {
+.main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h1 {
   font-size: 400%;
 }
-
-.heading {
+.main_container .heading {
   text-transform: uppercase;
   text-align: left;
   font-family: "Raleway";
@@ -154,23 +157,22 @@ body {
   color: #009c86;
 }
 @media only screen and (max-width: 900px) {
-  .heading {
+  .main_container .heading {
     text-align: center;
   }
 }
-
-section {
+.main_container section {
   max-width: 1189px;
   margin: auto;
   width: 100%;
   padding: 2rem;
 }
-section .container {
+.main_container section .container {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
-section .container .text {
+.main_container section .container .text {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -179,15 +181,14 @@ section .container .text {
   letter-spacing: 0.05em;
   text-align: justify;
 }
-section .container img {
+.main_container section .container img {
   width: 30rem;
 }
-section .container .hydrophonics_2 {
+.main_container section .container .hydrophonics_2 {
   display: grid;
   place-content: center;
 }
-
-section.device_container {
+.main_container section.device_container {
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -195,26 +196,174 @@ section.device_container {
   flex-wrap: wrap;
   padding: 2rem;
 }
-section.device_container img {
+.main_container section.device_container img {
   width: 30rem;
   -o-object-fit: contain;
      object-fit: contain;
   min-height: 25rem;
 }
-
-section.iot_hydrophics .container {
+.main_container section.iot_hydrophics .container {
   flex-direction: column;
 }
-section.iot_hydrophics .container .image {
+.main_container section.iot_hydrophics .container .image {
   text-align: center;
 }
-section.iot_hydrophics .container .image img {
+.main_container section.iot_hydrophics .container .image img {
   width: 40rem;
   -o-object-fit: contain;
      object-fit: contain;
   min-height: 25rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.gallery_scroll {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.slide-content {
+  margin: 0 20px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 7px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 20px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #009c86;
+}
+
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-color: #009c86;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+
+.card-image {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  border-radius: 2%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px solid #009c86;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #265DF2;
+}
+
+.swiper-navBtn {
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #4070F4;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #6E93f7;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 25px;
+  }
+}
 section.benefits_section .image {
   text-align: center;
   margin-bottom: 2rem;
@@ -225,6 +374,28 @@ section.benefits_section .image img {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.about_us {
+  margin-top: 2rem;
+  background: #303030;
+  padding: 4rem 2rem;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+.about_us .column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.about_us .column .head {
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .about_us {
