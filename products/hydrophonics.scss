@@ -37,6 +37,8 @@ body {
       .offcanvas {
         font-size: 3rem;
         padding-left: .5rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
         //width: 90%;
         a {
           font-size: 3rem;
@@ -152,6 +154,27 @@ body {
     text-align: center;
   }
 }
+
+
+.sub_heading{
+  text-transform: uppercase;
+  text-align: left;
+  font-family: "Raleway";
+  font-style: normal;
+  //font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: $color-primar-green;
+  @media only screen and (max-width: 900px) {
+    text-align: center;
+  }
+}
+
+
+
+
+
 section {
   max-width: 1189px;
   margin: auto;
