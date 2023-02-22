@@ -16,7 +16,7 @@ var form = document.getElementById('form')
           headers:{
             "Content-type": "application/json",
             "Connection":"keep-alive",
-            "Authorization": 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTBkZDVmMmFiYjI1MWI1YzY3YzU2YSIsImlhdCI6MTY3Njg4MDA2MCwiZXhwIjoxNzYzMjgwMDYwfQ.E-QmcM81zcApyfxU8fLcTK0Bw9g9SyxjTR3mvWe8QRw',
+            //"Authorization": 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZTBkZDVmMmFiYjI1MWI1YzY3YzU2YSIsImlhdCI6MTY3Njg4MDA2MCwiZXhwIjoxNzYzMjgwMDYwfQ.E-QmcM81zcApyfxU8fLcTK0Bw9g9SyxjTR3mvWe8QRw',
         },
           body:JSON.stringify({
             name:name,

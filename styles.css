@@ -285,6 +285,16 @@ body {
   letter-spacing: 0.05em;
   color: #1f3f68;
 }
+.main_container .video_section {
+  background: #F5FCFF;
+  padding: 8rem 2rem;
+}
+.main_container .video_section .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .main_container .sensors_section {
   background: #F5FCFF;
   padding: 8rem 2rem;

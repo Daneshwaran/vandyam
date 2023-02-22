@@ -211,6 +211,20 @@ body {
 .button input[type="button"]:hover {
   background: #1bc3ac;
 }
+.right-side .button1 input[type="submit"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #009c86;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button1 input[type="submit"]:hover {
+  background: #1bc3ac;
+}
 
 @media (max-width: 950px) {
   .container {

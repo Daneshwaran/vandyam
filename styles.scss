@@ -283,6 +283,18 @@ border: 4px solid #900;
       }
     }
   }
+  .video_section{
+    background: $color-bg-grey;
+    padding: 8rem 2rem;
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+
+  }
   .sensors_section {
     background: $color-bg-grey;
     padding: 8rem 2rem;
