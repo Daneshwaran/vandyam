@@ -205,6 +205,14 @@ body {
   display: grid;
   place-content: center;
 }
+.main_container .automation_coming {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  height: 20rem;
+}
 .main_container section.device_container {
   background-color: #ffffff;
   display: flex;

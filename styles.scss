@@ -29,6 +29,7 @@ body {
     letter-spacing: 0.05em;
     padding: 0 2rem;
     color: $color-primar-green;
+    margin-bottom: 2rem;
   }
   nav {
     display: none;
@@ -234,7 +235,7 @@ border: 4px solid #900;
   }
   .digital_era_container {
     background: $color-bg-grey;
-    padding-top: 5rem;
+    //padding-top: 5rem;
     .wrapper {
       display: flex;
       justify-content: center;
@@ -285,12 +286,17 @@ border: 4px solid #900;
   }
   .video_section{
     background: $color-bg-grey;
-    padding: 8rem 2rem;
+    padding: 4rem 2rem;
     .wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+
+      video {
+        height: auto;
+        width: 100%;
+      }
     }
 
 
@@ -357,6 +363,11 @@ border: 4px solid #900;
     }
     
 
+  }
+
+  .column a {
+    color: #ffffff;
+    text-decoration: none;
   }
 
   .client_section {

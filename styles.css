@@ -35,6 +35,7 @@ body {
   letter-spacing: 0.05em;
   padding: 0 2rem;
   color: #009c86;
+  margin-bottom: 2rem;
 }
 .main_container nav {
   display: none;
@@ -236,7 +237,6 @@ body {
 }
 .main_container .digital_era_container {
   background: #F5FCFF;
-  padding-top: 5rem;
 }
 .main_container .digital_era_container .wrapper {
   display: flex;
@@ -287,13 +287,17 @@ body {
 }
 .main_container .video_section {
   background: #F5FCFF;
-  padding: 8rem 2rem;
+  padding: 4rem 2rem;
 }
 .main_container .video_section .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+.main_container .video_section .wrapper video {
+  height: auto;
+  width: 100%;
 }
 .main_container .sensors_section {
   background: #F5FCFF;
@@ -353,6 +357,10 @@ body {
 }
 .main_container .Video_section .wrapper video {
   width: 100%;
+}
+.main_container .column a {
+  color: #ffffff;
+  text-decoration: none;
 }
 .main_container .client_section {
   background: #898989;

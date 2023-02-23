@@ -248,6 +248,16 @@ body .main_container .nav_links .sub_menu .item:hover {
   background: #1bc3ac;
 }
 
+.text-one a {
+  color: #030101;
+  text-decoration: none;
+}
+
+.topic a {
+  color: #030101;
+  text-decoration: none;
+}
+
 @media (max-width: 950px) {
   .container {
     width: 90%;
