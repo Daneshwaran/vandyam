@@ -182,6 +182,7 @@ body .main_container .nav_links .sub_menu .item:hover {
   font-size: 23px;
   font-weight: 600;
   color: #009c86;
+  margin-bottom: 1.5rem;
 }
 
 .right-side .input-box {
@@ -256,6 +257,10 @@ body .main_container .nav_links .sub_menu .item:hover {
 .topic a {
   color: #030101;
   text-decoration: none;
+}
+
+.contact-heading {
+  padding-left: 0.5rem;
 }
 
 @media (max-width: 950px) {
