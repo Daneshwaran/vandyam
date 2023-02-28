@@ -51,6 +51,14 @@ function validation(){
     document.getElementById("emailError").innerHTML="Email cannot be empty";
     formStatus = false;
   }
+  if(email.indexOf('@') <= 0){
+    document.getElementById("emailError").innerHTML="Enter valid mail ID";
+    formStatus = false;
+  }
+  if((email.charAt(email.length-4)!= '0') && (email.charAt(email.length-3)!= '0')){
+    document.getElementById("emailError").innerHTML="Enter valid mail ID";
+    formStatus = false;
+  }
   if(!name){
     document.getElementById("nameError").innerHTML="Name cannot be empty";
     formStatus = false;
