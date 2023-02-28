@@ -261,6 +261,51 @@ body .main_container .nav_links .sub_menu .item:hover {
 
 .contact-heading {
   padding-left: 0.5rem;
+  margin-top: 1rem;
+}
+
+.toast1 {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 400px;
+  padding: 6px;
+  background: #cccccc;
+  color: #333333;
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, top 0.2s, visibility 0.2s;
+}
+
+.toast1--visible {
+  top: 90px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.toast1--success {
+  background: #00c02b;
+  border-color: #009d23;
+  color: #ffffff;
+}
+
+.toast1--error {
+  background: #d50000;
+  border-color: #ba0000;
+  color: #ffffff;
+}
+
+.err1 {
+  margin-bottom: 0.3rem;
+  color: red;
+  padding-left: 0.5rem;
 }
 
 @media (max-width: 950px) {
