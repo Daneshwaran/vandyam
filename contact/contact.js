@@ -55,7 +55,7 @@ function validation(){
     document.getElementById("emailError").innerHTML="Enter valid mail ID";
     formStatus = false;
   }
-  if((email.charAt(email.length-4)!= '0') && (email.charAt(email.length-3)!= '0')){
+  if((email.charAt(email.length-4)!= '.') && (email.charAt(email.length-3)!= '.')){
     document.getElementById("emailError").innerHTML="Enter valid mail ID";
     formStatus = false;
   }

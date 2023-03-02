@@ -186,9 +186,9 @@ body .main_container .nav_links .sub_menu .item:hover {
 }
 
 .right-side .input-box {
-  height: 50px;
+  height: 40px;
   width: 100%;
-  margin: 12px 0;
+  margin: 8px 0;
 }
 
 .right-side .input-box input,
@@ -261,7 +261,6 @@ body .main_container .nav_links .sub_menu .item:hover {
 
 .contact-heading {
   padding-left: 0.5rem;
-  margin-top: 1rem;
 }
 
 .toast1 {

@@ -140,11 +140,11 @@
             <div class="email details">
               <i class="fas fa-envelope"></i>
               <div class="topic">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=office@vandyam.com" target="_blank" style="text-decoration:none">Email</a>
+                <a href="mailto:office@vandyam.com" target="_blank" style="text-decoration:none">Email</a>
               </div>
               <div class="text-one" >
                 <!-- <a href="mailto:?subject=office@vandyam.com&body=Dear%20Name,%0D%0A%0D%0AI%20would%20like%20to%20take%20this%20pportunity%20to%20,%0D%0ABest%20regards">123456</a> -->
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=office@vandyam.com" target="_blank" style="text-decoration:none"
+                <a href="mailto:office@vandyam.com" target="_blank" style="text-decoration:none"
                 >office@vandyam.com</a>
               </div>
               <!-- <div class="text-two">info.codinglab@gmail.com</div> -->
@@ -157,24 +157,28 @@
               <form  id="form" onsubmit="return validation()">
                 <div class="contact-heading">Name</div>
               <div class="input-box">
-                <input type="text" id="name" /> 
-                <div class="err1"><span class="formerror" id="nameError"></span></div>             
+                <input type="text" id="name" />           
               </div>
+              <div class="err1"><span id="nameError"></span></div>
+
               <div class="contact-heading">Email</div>
               <div class="input-box">
                 <input type="text" id="email" />
-                <div class="err1"><span class="formerror" id="emailError"></span></div>
-                <!-- <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required /> -->
-                
+                 <!-- <input pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required /> -->
                 </div>
+                <div class="err1"><span id="emailError"></span></div>
+
+
               <div class="contact-heading">Mobile Number</div>
               <div class="input-box">
                 <input type="tel" id="mobileNumber" value="" />
-                <div class="err1">
-                <span class="formerror" id="mobileNumberError"></span>
               </div>
-                
+              <div class="err1">
+                <span id="mobileNumberError"></span>
               </div>
+
+
+
               <div class="contact-heading">Message</div>
               <div class="input-box message-box">
                 <textarea name="text" id="message" id="" cols="30" rows="10"></textarea>

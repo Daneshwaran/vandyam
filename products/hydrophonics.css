@@ -401,6 +401,11 @@ section.benefits_section .image img {
      object-fit: contain;
 }
 
+.column a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .about_us {
   margin-top: 2rem;
   background: #303030;
