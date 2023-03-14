@@ -239,6 +239,39 @@ body {
   min-height: 25rem;
 }
 
+.desc {
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+
+.gallery_row {
+  display: flex;
+}
+@media screen and (max-width: 991px) {
+  .gallery_row {
+    display: none;
+  }
+}
+
+.text1 {
+  display: flex;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  text-align: justify;
+}
+@media screen and (min-width: 992px) {
+  .text1 {
+    display: none;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
