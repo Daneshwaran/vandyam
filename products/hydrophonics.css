@@ -76,6 +76,9 @@ body {
     width: 100px;
   }
 }
+.main_container .nav_bar img {
+  height: 2.75rem;
+}
 .main_container .spacer {
   flex-grow: 1;
 }
@@ -250,6 +253,9 @@ body {
 .gallery_row {
   display: flex;
 }
+.gallery_row img {
+  height: 12.75rem;
+}
 @media screen and (max-width: 991px) {
   .gallery_row {
     display: none;
@@ -325,6 +331,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #009c86;
+  border-radius: 25px 25px 0 25px;
 }
 
 .overlay::before,

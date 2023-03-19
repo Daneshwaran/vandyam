@@ -65,10 +65,13 @@ body {
         width: 100px;
       }
     }
-
+    img {
+      height: 2.75rem;
+    }
   }
   // img {
-  //   height: 2.75rem;
+  //   height: 12.75rem;
+  //   border-radius:50% 50% 0 0 ;
   // }
   .spacer {
     flex-grow: 1;
@@ -320,6 +323,10 @@ section.iot_hydrophics {
 
 .gallery_row{
   display: flex;
+  img {
+    height: 12.75rem;
+    //border-radius:50% 50% 0 0 ;
+  }
   @media screen and (max-width: 991px) {
     display: none;
   }
@@ -397,7 +404,7 @@ section.iot_hydrophics {
     height: 100%;
     width: 100%;
     background-color: #009c86;
-    //border-radius: 25px 25px 0 25px;
+    border-radius: 25px 25px 0 25px;
   }
   .overlay::before,
   .overlay::after{
