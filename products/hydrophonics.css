@@ -290,7 +290,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .slide-container {
@@ -307,7 +307,7 @@ body {
 
 .card {
   border-radius: 5px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .image-content,
@@ -344,7 +344,7 @@ body {
 
 .overlay::after {
   border-radius: 0 25px 0 0;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .card-image {
@@ -352,7 +352,7 @@ body {
   height: 400px;
   width: 300px;
   border-radius: 2%;
-  background: #FFF;
+  background: #fff;
   padding: 3px;
 }
 
@@ -379,9 +379,9 @@ body {
 .button {
   border: none;
   font-size: 16px;
-  color: #FFF;
+  color: #fff;
   padding: 8px 16px;
-  background-color: #4070F4;
+  background-color: #4070f4;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
@@ -389,16 +389,16 @@ body {
 }
 
 .button:hover {
-  background: #265DF2;
+  background: #265df2;
 }
 
 .swiper-navBtn {
-  color: #6E93f7;
+  color: #6e93f7;
   transition: color 0.3s ease;
 }
 
 .swiper-navBtn:hover {
-  color: #4070F4;
+  color: #4070f4;
 }
 
 .swiper-navBtn::before,
@@ -415,12 +415,12 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background-color: #6E93f7;
+  background-color: #6e93f7;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #4070F4;
+  background-color: #4070f4;
 }
 
 @media screen and (max-width: 768px) {
