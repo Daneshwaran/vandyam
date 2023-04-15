@@ -182,7 +182,6 @@ body {
   max-width: 1189px;
   margin: auto;
   width: 100%;
-  padding: 2rem;
 }
 .main_container section .container {
   display: flex;
@@ -221,7 +220,6 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 2rem;
 }
 .main_container section.device_container img {
   width: 30rem;

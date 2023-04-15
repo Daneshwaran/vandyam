@@ -31,6 +31,18 @@ body {
     color: $color-primar-green;
     margin-bottom: 2rem;
   }
+  .banner_heading{
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 3.2rem;
+    letter-spacing: 0.05em;
+    ///line-height: 10rem;
+    padding: 0 2rem;
+    //margin-top: 0.67em;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Raleway";
+  }
   nav {
     display: none;
     padding-top: 1rem;
