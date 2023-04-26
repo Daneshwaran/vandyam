@@ -151,6 +151,7 @@ body {
     font-size: 36px;
     line-height: 46px;
     letter-spacing: 0.05em;
+    font-family: "Poppins", sans-serif;
     color: $color-primar-green;
     @media only screen and (max-width: 900px) {
       text-align: center;
@@ -224,6 +225,7 @@ body {
     }
   }
   section.iot_hydrophics {
+    margin-top: 1rem;
     .container {
       flex-direction: column;
       .image {
@@ -524,9 +526,9 @@ section.benefits_section {
 // }
 
 .about_us {
-  margin-top: 2rem;
+  //margin-top: 2rem;
   background: $color-about-us-bg;
-  padding: 4rem 2rem;
+  //padding: 4rem 2rem;
   color: #ffffff;
   font-family: "Raleway";
   font-style: normal;
@@ -534,7 +536,15 @@ section.benefits_section {
   display: flex;
   gap: 2rem;
   justify-content: space-evenly;
+  .footer_img {
+    padding: 2rem;
+    max-width: 100%;
+   max-height: 15rem;
+   align-items: center;
+   justify-content: center;
+  }
   .column {
+    padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -545,24 +555,24 @@ section.benefits_section {
   }
 }
 
-.about_us {
-  margin-top: 2rem;
-  background: $color-about-us-bg;
-  padding: 4rem 2rem;
-  color: #ffffff;
-  font-family: "Raleway";
-  font-style: normal;
-  font-size: 1rem;
-  display: flex;
-  gap: 2rem;
-  justify-content: space-evenly;
-  .column {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    .head {
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
-  }
-}
+// .about_us {
+//   margin-top: 2rem;
+//   background: $color-about-us-bg;
+//   padding: 4rem 2rem;
+//   color: #ffffff;
+//   font-family: "Raleway";
+//   font-style: normal;
+//   font-size: 1rem;
+//   display: flex;
+//   gap: 2rem;
+//   justify-content: space-evenly;
+//   .column {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 0.5rem;
+//     .head {
+//       font-size: 1.4rem;
+//       font-weight: bold;
+//     }
+//   }
+// }

@@ -391,7 +391,6 @@ body {
 }
 .main_container .about_us {
   background: #303030;
-  padding: 4rem 2rem;
   display: flex;
   color: #ffffff;
   font-family: "Raleway";
@@ -400,8 +399,17 @@ body {
   display: flex;
   gap: 2rem;
   justify-content: space-evenly;
+  max-height: 15rem;
+}
+.main_container .about_us .footer_img {
+  padding: 2rem;
+  max-width: 100%;
+  max-height: 15rem;
+  align-items: center;
+  justify-content: center;
 }
 .main_container .about_us .column {
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
