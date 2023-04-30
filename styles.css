@@ -402,8 +402,9 @@ body {
   max-height: 15rem;
 }
 .main_container .about_us .footer_img {
-  padding: 2rem;
-  max-width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 90%;
   max-height: 15rem;
   align-items: center;
   justify-content: center;

@@ -124,31 +124,11 @@ body {
 .main_container .nav_links .sub_menu .item:hover {
   text-decoration: underline;
 }
-.main_container #carouselExampleIndicators {
-  height: 45rem;
-  max-width: 2000px;
-  margin: auto;
-}
-.main_container #carouselExampleIndicators .carousel-inner {
-  height: 100%;
-}
-.main_container #carouselExampleIndicators .carousel-inner .carousel-item {
-  height: 100%;
-}
-.main_container #carouselExampleIndicators .carousel-inner .carousel-item img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-.main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption {
-  top: 15rem;
-}
-.main_container #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h1 {
-  font-size: 400%;
-}
 .main_container .heading {
+  text-align: center;
   text-transform: uppercase;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
   text-align: left;
   font-family: "Raleway";
   font-style: normal;
@@ -158,6 +138,7 @@ body {
   letter-spacing: 0.05em;
   font-family: "Poppins", sans-serif;
   color: #009c86;
+  justify-content: center;
 }
 @media only screen and (max-width: 900px) {
   .main_container .heading {
@@ -193,8 +174,8 @@ body {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 36px;
   letter-spacing: 0.05em;
   text-align: justify;
 }
@@ -204,14 +185,6 @@ body {
 .main_container section .container .hydrophonics_2 {
   display: grid;
   place-content: center;
-}
-.main_container .automation_coming {
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 2rem;
-  height: 20rem;
 }
 .main_container section.device_container {
   margin-top: 2rem;
@@ -242,6 +215,22 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   min-height: 25rem;
+}
+
+.customisable {
+  background: #F5FCFF;
+}
+.customisable .heading {
+  color: #009c86;
+}
+.customisable .clients {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.customisable .clients img {
+  width: 100%;
 }
 
 .desc {
@@ -506,24 +495,49 @@ section.benefits_section .image img {
   font-weight: bold;
 }
 
-.download-button {
-  padding: 0px 10px;
-  background-color: #198754;
-  color: white;
-  border: none;
-  border-radius: 5px;
+.sensors_section {
+  background: #F5FCFF;
+  padding: 8rem 2rem;
+}
+.sensors_section .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sensors_section .wrapper .sensors {
+  padding: 3rem;
+}
+.sensors_section .wrapper .sensors .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 5rem;
+  justify-content: space-evenly;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.sensors_section .wrapper .sensors .wrapper .app {
+  text-align: center;
+}
+.sensors_section .wrapper .sensors .wrapper .app img {
+  height: 8.875rem;
+  width: 8.875rem;
+}
+.sensors_section .wrapper .sensors .wrapper .app .label {
+  text-align: center;
   font-family: "Raleway";
   font-style: normal;
-  font-size: 1rem;
-  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 2.875rem;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  margin-top: 1rem;
+  min-width: 15rem;
 }
-
-.download-button:hover {
-  background-color: #3e8e41;
-}
-
-.download-button:active {
-  background-color: #198754;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}/*# sourceMappingURL=hydrophonics.css.map */
+.sensors_section .wrapper img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 32rem;
+}/*# sourceMappingURL=aboutus.css.map */

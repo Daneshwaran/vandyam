@@ -149,7 +149,9 @@ body {
 }
 .main_container .heading {
   text-transform: uppercase;
-  text-align: left;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  text-align: center;
   font-family: "Raleway";
   font-style: normal;
   font-weight: bold;
@@ -158,6 +160,7 @@ body {
   letter-spacing: 0.05em;
   font-family: "Poppins", sans-serif;
   color: #009c86;
+  justify-content: center;
 }
 @media only screen and (max-width: 900px) {
   .main_container .heading {
@@ -193,8 +196,8 @@ body {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 36px;
   letter-spacing: 0.05em;
   text-align: justify;
 }
@@ -506,24 +509,72 @@ section.benefits_section .image img {
   font-weight: bold;
 }
 
-.download-button {
-  padding: 0px 10px;
-  background-color: #198754;
-  color: white;
-  border: none;
-  border-radius: 5px;
+.client_section {
+  background: #898989;
+  padding: 4rem 2rem;
+}
+.client_section .heading {
+  color: #ffffff;
+}
+.client_section .clients {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.client_section .clients img {
+  width: 18rem;
+}
+
+.digital_era_container {
+  background: #F5FCFF;
+}
+.digital_era_container .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.digital_era_container .wrapper .card_container {
   font-family: "Raleway";
   font-style: normal;
-  font-size: 1rem;
-  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0.3125rem 1.25rem 3.125rem rgba(135, 135, 135, 0.34);
+  border-radius: 0.625rem;
 }
-
-.download-button:hover {
-  background-color: #3e8e41;
+.digital_era_container .wrapper .card_container .grapics {
+  height: 25rem;
+  width: 20rem;
+  display: grid;
+  place-items: center;
 }
-
-.download-button:active {
-  background-color: #198754;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}/*# sourceMappingURL=hydrophonics.css.map */
+.digital_era_container .wrapper .card_container .grapics img {
+  width: 100%;
+}
+.digital_era_container .wrapper .card_container .card_head {
+  padding-left: 2rem;
+}
+.digital_era_container .wrapper .card_container .card_body {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+}/*# sourceMappingURL=services.css.map */

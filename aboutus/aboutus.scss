@@ -119,31 +119,13 @@ body {
     }
   }
 
-  #carouselExampleIndicators {
-    height: 45rem;
-    max-width: 2000px;
-    margin: auto;
-    .carousel-inner {
-      height: 100%;
-      .carousel-item {
-        height: 100%;
-        img {
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-        }
-        .carousel-caption {
-          top: 15rem;
-          h1 {
-            font-size: 400%;
-          }
-        }
-      }
-    }
-  }
 
   .heading {
+    //padding: 2rem;
+    text-align: center;
     text-transform: uppercase;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
     text-align: left;
     font-family: "Raleway";
     font-style: normal;
@@ -153,6 +135,7 @@ body {
     letter-spacing: 0.05em;
     font-family: "Poppins", sans-serif;
     color: $color-primar-green;
+    justify-content: center;
     @media only screen and (max-width: 900px) {
       text-align: center;
     }
@@ -186,8 +169,8 @@ body {
         font-family: "Raleway";
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 22px;
+        line-height: 36px;
         letter-spacing: 0.05em;
         text-align: justify;
       }
@@ -200,15 +183,7 @@ body {
       }
     }
   }
-  .automation_coming {
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    //flex-wrap: wrap;
-    padding: 2rem;
-    height: 20rem;
-  }
+
   section.device_container {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -236,6 +211,24 @@ body {
           min-height: 25rem;
         }
       }
+    }
+  }
+}
+
+.customisable {
+  background: $color-bg-grey;
+  //padding: 4rem 2rem;
+  .heading {
+    color: $color-primar-green;
+  }
+  .clients {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    //padding: 2rem;
+    flex-wrap: wrap;
+    img {
+      width: 100%;
     }
   }
 }
@@ -558,27 +551,50 @@ section.benefits_section {
 }
 
 
-
-.download-button {
-  padding: 0px 10px;
-  background-color: #198754;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.download-button:hover {
-  background-color: #3e8e41;
-}
-
-.download-button:active {
-  background-color: #198754;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.sensors_section {
+  background: $color-bg-grey;
+  padding: 8rem 2rem;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .sensors {
+      padding: 3rem;
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 5rem;
+        justify-content: space-evenly;
+        padding: 2rem;
+        box-sizing: border-box;
+        .app {
+          text-align: center;
+          img {
+            height: 8.875rem;
+            width: 8.875rem;
+          }
+          .label {
+            text-align: center;
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.25rem;
+            line-height: 2.875rem;
+            letter-spacing: 0.05em;
+            color: #1f3f68;
+            margin-top: 1rem;
+            min-width: 15rem;
+          }
+        }
+      }
+    }
+    img {
+      object-fit: contain;
+      width: 32rem;
+    }
+  }
 }
 
 // .about_us {
