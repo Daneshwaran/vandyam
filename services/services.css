@@ -525,6 +525,7 @@ section.benefits_section .image img {
 }
 .client_section .clients img {
   width: 18rem;
+  height: 6rem;
 }
 
 .digital_era_container {

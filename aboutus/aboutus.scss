@@ -173,6 +173,9 @@ body {
         line-height: 36px;
         letter-spacing: 0.05em;
         text-align: justify;
+        @media only screen and (max-width: 900px) {
+          text-align: center;
+        }
       }
       img {
         width: 30rem;
@@ -618,3 +621,69 @@ section.benefits_section {
 //     }
 //   }
 // }
+
+
+
+
+.chat-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 9999;
+  display: none;
+}
+.chat-header {
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-header h4 {
+  margin: 0;
+}
+.btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.chat-body {
+  padding: 10px;
+  height: 200px;
+  overflow-y: scroll;
+}
+.chat-message {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.chat-message p {
+  margin: 0;
+}
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+}
+.chat-input input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.chat-input button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+}
