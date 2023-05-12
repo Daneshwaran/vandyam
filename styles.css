@@ -382,7 +382,7 @@ body {
 .main_container .client_section .clients {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   padding: 2rem;
   flex-wrap: wrap;
 }

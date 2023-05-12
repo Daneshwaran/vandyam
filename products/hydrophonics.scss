@@ -255,6 +255,30 @@ body {
     }
   }
 }
+section.device_container3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  //padding: 2rem;
+  img {
+    width: 40rem;
+    object-fit: cover;
+    min-height: 25rem;
+  }
+}
+.vhs100 {
+  text-align: center;
+  //align-items: center;
+  justify-content: center;
+}
+.broucher_download {
+  margin-top: 1rem;
+text-align: center;
+}
 
 .container3 {
   display: flex;
@@ -617,6 +641,11 @@ body {
 }
 .swiper-pagination-bullet-active {
   background-color: #4070f4;
+}
+.d- {
+  background-color: transparent;
+  //object-fit: scale-down;
+
 }
 
 @media screen and (max-width: 768px) {
