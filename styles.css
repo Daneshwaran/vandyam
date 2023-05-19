@@ -388,6 +388,20 @@ body {
 }
 .main_container .client_section .clients img {
   width: 18rem;
+  height: 6rem;
+}
+.main_container .client_section .clients .omnyk {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  width: 18rem;
+  height: 6rem;
+}
+.main_container .client_section .clients .omnyk img {
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  width: 17rem;
+  height: 5rem;
 }
 .main_container .about_us {
   background: #303030;
